@@ -28,7 +28,7 @@ header {
   border-bottom: solid grey 1px;
 }
 
-.header-panel {
+.panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,12 +43,12 @@ header {
           align-items: center;
 }
 
-.link {
+.item {
   padding: 0 20px;
   border-right: solid grey 1px;
 }
 
-.header__panel-left {
+.header__panel--left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,11 +57,11 @@ header {
           justify-content: center;
 }
 
-.header__panel-middle {
+.header__panel--middle {
   margin: 0 100px;
 }
 
-.header__panel-right {
+.header__panel--right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
