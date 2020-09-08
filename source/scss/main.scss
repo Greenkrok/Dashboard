@@ -44,14 +44,31 @@ header {
 .header__panel--left {
     display: flex;
     justify-content: center;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header__panel--middle {
     margin: 0 100px;
+
+    input {
+        margin: 0 20px;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+    }
 }
 
 .header__panel--right {
     display: flex;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header__upload {
@@ -72,10 +89,19 @@ header {
         background-color: grey;
         border-radius: 50%;
     }
-    .operator__info {
+    &__info {
         display: flex;
         flex-direction: column;
         padding: 20px;
+    }
+
+    &__name {
+        color: #FD7858;
+        font-size: 13px;
+    }
+
+    &__profession {
+        font-size: 10px;
     }
 }
 
