@@ -106,4 +106,33 @@ nav {
 .statics {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    &__item {
+        font-weight: bold;
+    }
+
+    &__data {
+        color: #FD7858;
+        font-size: 20px;
+    }
+
+    &__dynamics {
+        display: flex;
+    }
+
+    &__progress::before {
+        content: url(../img/progress.png);
+        margin-right: 5px;        
+    }
+
+    &__regression::before {
+        content: url(../img/regression.png);
+        margin: 0 5px;              
+    }
+
+    &__statics--new {
+        color: #FD7858;
+    }
+
 }

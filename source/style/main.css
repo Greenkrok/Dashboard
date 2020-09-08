@@ -141,5 +141,37 @@ nav .nav__menu p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statics__item {
+  font-weight: bold;
+}
+
+.statics__data {
+  color: #FD7858;
+  font-size: 20px;
+}
+
+.statics__dynamics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.statics__progress::before {
+  content: url(../img/progress.png);
+  margin-right: 5px;
+}
+
+.statics__regression::before {
+  content: url(../img/regression.png);
+  margin: 0 5px;
+}
+
+.statics__statics--new {
+  color: #FD7858;
 }
 /*# sourceMappingURL=main.css.map */
