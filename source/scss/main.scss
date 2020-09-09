@@ -10,6 +10,7 @@
 .wrap {
     width: 1366px;
     margin: 0 auto;
+    background-color: #EAEAEA;
 }
 
 ul {
@@ -23,10 +24,13 @@ a {
 }
 
 
+
+
 // HEADER
 header {
     display: flex;
     border-bottom: solid grey 1px;
+    background: #fff;
 }
 
 .panel {
@@ -106,6 +110,9 @@ header {
 }
 
 
+
+
+
 // NAV
 nav {
     width: 5vw;
@@ -128,11 +135,16 @@ nav {
     }
     }
 
+
+
+
+
 // STATICS
 .statics {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: #fff;
 
     &__item {
         font-weight: bold;
@@ -161,4 +173,55 @@ nav {
         color: #FD7858;
     }
 
+}
+
+
+.chart {
+    margin: 20px;
+    background: #fff;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title p, a {
+        font-size: 14px;
+        font-weight: bold;        
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        li {
+            margin: 10px;
+            a:hover {
+                color: white;
+                background-color: red;
+                border-radius: 40%;
+                padding: 5px 20px;
+            }
+        }
+    }
+
+    &__period {
+        display: flex;
+        margin: 0 10px;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__months {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .chart__additionally li {
+        width: 5px;
+        height: 5px;
+        margin: 1px 0;
+        background-color: grey;
+        border-radius: 50%;
+    }
 }

@@ -11,6 +11,7 @@
 .wrap {
   width: 1366px;
   margin: 0 auto;
+  background-color: #EAEAEA;
 }
 
 ul {
@@ -28,6 +29,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   border-bottom: solid grey 1px;
+  background: #fff;
 }
 
 .panel {
@@ -178,6 +180,7 @@ nav .nav__menu p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #fff;
 }
 
 .statics__item {
@@ -207,5 +210,73 @@ nav .nav__menu p {
 
 .statics__statics--new {
   color: #FD7858;
+}
+
+.chart {
+  margin: 20px;
+  background: #fff;
+}
+
+.chart__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chart__title p, .chart a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.chart__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chart__menu li {
+  margin: 10px;
+}
+
+.chart__menu li a:hover {
+  color: white;
+  background-color: red;
+  border-radius: 40%;
+  padding: 5px 20px;
+}
+
+.chart__period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+
+.chart__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chart__months {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.chart .chart__additionally li {
+  width: 5px;
+  height: 5px;
+  margin: 1px 0;
+  background-color: grey;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=main.css.map */
