@@ -182,7 +182,7 @@ nav {
 // REVENUE
 .revenue {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -247,6 +247,7 @@ nav {
 
 // PIECHART
 .pieChart {
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -281,8 +282,16 @@ nav {
     }
 }
 
+
+// SYSTEM
+.system {
+    display: flex;
+    justify-content: space-between;
+}
+
 // customersFeed
 .customersFeed {
+    width: 50%;
     background-color: #ffffff;
     margin: 20px;
     padding: 20px;
@@ -319,3 +328,57 @@ nav {
     justify-content: space-around;
     }
 }
+
+
+// LOGISTICS
+.logistics {
+    width: 50%;
+    &__title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+
+
+// TODAYSTASK
+.todaysTask {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+}
+
+.todolist {
+    &__item {
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+    }
+    img {
+        margin: 0 10px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .time {
+            display: flex;
+            align-items: center;
+        }
+        .input {
+            color: #FD566F;
+            font-family: 'Lato-Black';
+            font-weight: bold;
+        
+            input {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.todolist__item:nth-child(even){
+    background: #fcfcfc;
+}
+
+

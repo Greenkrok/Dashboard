@@ -217,8 +217,9 @@ nav .nav__menu p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .chart {
@@ -303,6 +304,7 @@ nav .nav__menu p {
 }
 
 .pieChart {
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,7 +358,17 @@ nav .nav__menu p {
   font-weight: bold;
 }
 
+.system {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .customersFeed {
+  width: 50%;
   background-color: #ffffff;
   margin: 20px;
   padding: 20px;
@@ -398,5 +410,65 @@ nav .nav__menu p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.logistics {
+  width: 50%;
+}
+
+.logistics__title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.todaysTask {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.todolist__item {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.todolist img {
+  margin: 0 10px;
+}
+
+.todolist__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.todolist__item .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todolist__item .input {
+  color: #FD566F;
+  font-family: 'Lato-Black';
+  font-weight: bold;
+}
+
+.todolist__item .input input {
+  margin-right: 20px;
+}
+
+.todolist__item:nth-child(even) {
+  background: #fcfcfc;
 }
 /*# sourceMappingURL=main.css.map */
