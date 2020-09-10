@@ -179,7 +179,7 @@ nav {
 // MAIN
 
 
-// REVENEW
+// REVENUE
 .revenue {
     display: flex;
     justify-content: space-around;
@@ -247,7 +247,7 @@ nav {
 
 // PIECHART
 .pieChart {
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -278,5 +278,44 @@ nav {
         color: #6a5bb4;
         font-size: 25px;
         font-weight: bold; 
+    }
+}
+
+// customersFeed
+.customersFeed {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    &__title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__avatar {
+        width: 43px;
+        height: 43px;
+        background-color: black;
+    }
+
+    &__status {
+        font-size: 8px;
+    }
+    &__item {
+        background-color: #fcfcfc;
+        border: 1px solid #f1f1f1;
+        margin-bottom: 20px;
+        p {
+            margin: 20px;
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .customer {
+        
+    display: flex;
+    justify-content: space-around;
     }
 }

@@ -355,4 +355,48 @@ nav .nav__menu p {
   font-size: 25px;
   font-weight: bold;
 }
+
+.customersFeed {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.customersFeed__title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.customersFeed__avatar {
+  width: 43px;
+  height: 43px;
+  background-color: black;
+}
+
+.customersFeed__status {
+  font-size: 8px;
+}
+
+.customersFeed__item {
+  background-color: #fcfcfc;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.customersFeed__item p {
+  margin: 20px;
+}
+
+.customersFeed__item span {
+  font-weight: bold;
+}
+
+.customersFeed .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=main.css.map */
