@@ -1,6 +1,7 @@
 *,
 *::after,
 *::before {
+    max-width: 1366px;
     box-sizing: border-box;
     font-family: Lato;
     font-size: 12px;
@@ -8,7 +9,6 @@
 }
 
 .wrap {
-    width: 1366px;
     margin: 0 auto;
     background-color: #EAEAEA;
 }
@@ -145,6 +145,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background: #fff;
+    padding: 20px 0px;
 
     &__item {
         font-weight: bold;
@@ -175,9 +176,20 @@ nav {
 
 }
 
+// MAIN
 
+
+// REVENEW
+.revenue {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+// CHART
 .chart {
     margin: 20px;
+    padding: 20px;
     background: #fff;
     &__header {
         display: flex;
@@ -203,6 +215,12 @@ nav {
         }
     }
 
+    &__revenue {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
     &__period {
         display: flex;
         margin: 0 10px;
@@ -223,5 +241,42 @@ nav {
         margin: 1px 0;
         background-color: grey;
         border-radius: 50%;
+    }
+}
+
+
+// PIECHART
+.pieChart {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+
+    &__mainContent {
+        display: flex;
+        justify-content: center;
+        border: 10px solid #906fca;
+        border-radius: 50%;
+        background-color: #ededed;
+    }
+
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 87px;
+        height: 87px;
+        border: 10px solid #ededed;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    &__content {
+        color: #6a5bb4;
+        font-size: 25px;
+        font-weight: bold; 
     }
 }

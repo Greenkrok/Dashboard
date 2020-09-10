@@ -1,6 +1,7 @@
 *,
 *::after,
 *::before {
+  max-width: 1366px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Lato;
@@ -9,7 +10,6 @@
 }
 
 .wrap {
-  width: 1366px;
   margin: 0 auto;
   background-color: #EAEAEA;
 }
@@ -181,6 +181,7 @@ nav .nav__menu p {
       -ms-flex-align: center;
           align-items: center;
   background: #fff;
+  padding: 20px 0px;
 }
 
 .statics__item {
@@ -212,8 +213,17 @@ nav .nav__menu p {
   color: #FD7858;
 }
 
+.revenue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .chart {
   margin: 20px;
+  padding: 20px;
   background: #fff;
 }
 
@@ -251,6 +261,18 @@ nav .nav__menu p {
   padding: 5px 20px;
 }
 
+.chart__revenue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .chart__period {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,5 +300,59 @@ nav .nav__menu p {
   margin: 1px 0;
   background-color: grey;
   border-radius: 50%;
+}
+
+.pieChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.pieChart__mainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 10px solid #906fca;
+  border-radius: 50%;
+  background-color: #ededed;
+}
+
+.pieChart__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 87px;
+  height: 87px;
+  border: 10px solid #ededed;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.pieChart__content {
+  color: #6a5bb4;
+  font-size: 25px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
