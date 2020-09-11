@@ -303,8 +303,8 @@ nav .nav__menu p {
   border-radius: 50%;
 }
 
-.pieChart {
-  width: 25%;
+.block {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +323,7 @@ nav .nav__menu p {
   padding: 20px;
 }
 
-.pieChart__mainContent {
+.block__mainContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +335,7 @@ nav .nav__menu p {
   background-color: #ededed;
 }
 
-.pieChart__circle {
+.block__circle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,10 +352,11 @@ nav .nav__menu p {
   background-color: #ffffff;
 }
 
-.pieChart__content {
+.block__content {
   color: #6a5bb4;
   font-size: 25px;
   font-weight: bold;
+  margin: 20px;
 }
 
 .system {
@@ -470,5 +471,31 @@ nav .nav__menu p {
 
 .todolist__item:nth-child(even) {
   background: #fcfcfc;
+}
+
+.view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.view .block__mainContent {
+  border: none;
+}
+
+.view .block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.view .block__item .block__content {
+  color: #FD7858;
 }
 /*# sourceMappingURL=main.css.map */

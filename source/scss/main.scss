@@ -245,9 +245,9 @@ nav {
 }
 
 
-// PIECHART
-.pieChart {
-    width: 25%;
+// BLOCK
+.block {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -278,7 +278,8 @@ nav {
     &__content {
         color: #6a5bb4;
         font-size: 25px;
-        font-weight: bold; 
+        font-weight: bold;
+        margin: 20px;
     }
 }
 
@@ -382,3 +383,19 @@ nav {
 }
 
 
+// VIEW
+.view {
+    display: flex;
+    .block__mainContent {
+        border: none;
+    }
+    .block__item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        .block__content {
+            color: #FD7858;
+        }
+    }
+}
