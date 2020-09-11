@@ -1,7 +1,6 @@
 *,
 *::after,
 *::before {
-    max-width: 1366px;
     box-sizing: border-box;
     font-family: Lato;
     font-size: 12px;
@@ -9,6 +8,7 @@
 }
 
 .wrap {
+    max-width: 1366px;
     margin: 0 auto;
     background-color: #EAEAEA;
 }
@@ -22,6 +22,9 @@ ul {
 a {
     text-decoration: none;
 }
+
+
+
 
 
 
@@ -55,14 +58,14 @@ header {
     }
 }
 
-.header__panel--middle {
-    margin: 0 100px;
+.search {
 
     input {
         margin: 0 20px;
         padding: 10px;
         border: 1px solid;
         border-radius: 10px;
+        background-color: #f8f8f8;;
     }
 }
 
@@ -93,6 +96,9 @@ header {
         background-color: grey;
         border-radius: 50%;
     }
+    &__avatar {
+        margin-left: 10px;
+    }
     &__info {
         display: flex;
         flex-direction: column;
@@ -108,6 +114,8 @@ header {
         font-size: 10px;
     }
 }
+
+
 
 
 
@@ -134,6 +142,9 @@ nav {
         }
     }
     }
+
+
+
 
 
 
@@ -174,6 +185,16 @@ nav {
         color: #FD7858;
     }
 
+}
+
+
+
+
+
+
+// MAIN-ASIDE
+.main-aside {
+    display: flex;
 }
 
 // MAIN
@@ -245,6 +266,9 @@ nav {
 }
 
 
+
+
+
 // BLOCK
 .block {
     width: 50%;
@@ -282,6 +306,10 @@ nav {
         margin: 20px;
     }
 }
+
+
+
+
 
 
 // SYSTEM
@@ -329,6 +357,11 @@ nav {
     justify-content: space-around;
     }
 }
+
+
+
+
+
 
 
 // LOGISTICS
@@ -383,6 +416,12 @@ nav {
 }
 
 
+
+
+
+
+
+
 // VIEW
 .view {
     display: flex;
@@ -398,4 +437,28 @@ nav {
             color: #FD7858;
         }
     }
+}
+
+
+
+
+
+
+
+// ASIDE-FOOTER
+
+// ASIDE
+.aside {
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FD7858;
+    }
+}
+
+.users {
+    background-color: white;
+    height: 26vw;
+    overflow: hidden auto;
 }
