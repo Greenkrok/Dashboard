@@ -59,11 +59,13 @@ header {
 }
 
 .search {
+    display: flex;
+    align-items: center;
 
     input {
-        margin: 0 20px;
+        margin-right: 20px;
         padding: 10px;
-        border: 1px solid;
+        border: 1px solid #f9f9f9;
         border-radius: 10px;
         background-color: #f8f8f8;;
     }
@@ -442,6 +444,19 @@ nav {
 // ASIDE-FOOTER
 
 // ASIDE
+.searchPeoples {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    input {
+        font-size: 10px;
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid #777777;
+    }
+}
+
 .aside {
     &__menu {
         display: flex;

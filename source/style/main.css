@@ -70,10 +70,19 @@ header {
           align-items: center;
 }
 
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .search input {
-  margin: 0 20px;
+  margin-right: 20px;
   padding: 10px;
-  border: 1px solid;
+  border: 1px solid #f9f9f9;
   border-radius: 10px;
   background-color: #f8f8f8;
 }
@@ -498,6 +507,26 @@ nav .nav__menu p {
 
 .view .block__item .block__content {
   color: #FD7858;
+}
+
+.searchPeoples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px;
+}
+
+.searchPeoples input {
+  font-size: 10px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #777777;
 }
 
 .aside__menu {
