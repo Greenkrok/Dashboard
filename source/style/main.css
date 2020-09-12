@@ -388,12 +388,6 @@ nav .nav__menu p {
   margin-bottom: 20px;
 }
 
-.customersFeed__avatar {
-  width: 43px;
-  height: 43px;
-  background-color: black;
-}
-
 .customersFeed__status {
   font-size: 8px;
 }
