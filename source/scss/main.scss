@@ -471,3 +471,42 @@ nav {
     height: 26vw;
     overflow: hidden auto;
 }
+
+// FOOTER
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .social {
+     display: flex;
+     flex-wrap: wrap;
+     li {
+         padding: 10px;
+         margin: 5px;
+         width: 55px;
+         height: 55px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 25%;
+     }
+     .rdio {
+         background-color: #8662c5;
+     }
+     .css-3 {
+         background-color: #4eccc4;
+     }
+     .deviantart {
+         background-color: #e5a58f;
+     }
+     .xing {
+         background-color: #7e7fd9;
+     }
+     .vimeo {
+         background-color: #30c3df;
+     }
+     .vk {
+         background-color: #f9c787;
+     }
+ }
