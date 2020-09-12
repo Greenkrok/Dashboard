@@ -444,19 +444,6 @@ nav {
 // ASIDE-FOOTER
 
 // ASIDE
-.searchPeoples {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0px;
-    input {
-        font-size: 10px;
-        background-color: inherit;
-        border: none;
-        border-bottom: 1px solid #777777;
-    }
-}
-
 .aside {
     &__menu {
         display: flex;
@@ -471,12 +458,25 @@ nav {
     height: 26vw;
     overflow: hidden auto;
 }
+.searchPeoples {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+    input {
+        font-size: 10px;
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid #777777;
+    }
+}
 
 // FOOTER
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #fff;
 }
  .social {
      display: flex;
