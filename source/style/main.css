@@ -12,6 +12,15 @@
   max-width: 1366px;
   margin: 0 auto;
   background-color: #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 ul {
@@ -24,12 +33,58 @@ a {
   text-decoration: none;
 }
 
+nav {
+  margin-top: -8px;
+  height: 100%;
+  position: absolute;
+  background: #FD7858;
+  left: 0;
+  width: 5%;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'DeftoneStylus';
+  background-color: #FFFFFF;
+  color: #FD7858;
+  font-size: 30px;
+  padding: 20px;
+}
+
+nav .nav__menu p {
+  font-size: 10px;
+  color: #FFFFFF;
+}
+
+nav .nav__link {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: solid grey 1px;
   background: #fff;
+  width: 95%;
 }
 
 .panel {
@@ -151,37 +206,8 @@ header {
   font-size: 10px;
 }
 
-nav {
-  width: 5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav .logo {
-  font-family: 'DeftoneStylus';
-  background-color: #FFFFFF;
-  color: #FD7858;
-  font-size: 30px;
-}
-
-nav .nav__menu {
-  background-color: #FD7858;
-}
-
-nav .nav__menu p {
-  font-size: 10px;
-  color: #FFFFFF;
-}
-
 .statics {
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +253,7 @@ nav .nav__menu p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 95%;
 }
 
 .revenue {
