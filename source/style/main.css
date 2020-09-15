@@ -41,7 +41,6 @@ a {
 }
 
 nav {
-  margin-top: -8px;
   height: 100%;
   position: absolute;
   background: #FD7858;
@@ -121,6 +120,30 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header__panel--left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FD7858;
+  width: 33px;
+  height: 18px;
+  border-radius: 20px;
+}
+
+.header__panel--left ul li {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  margin-left: 1px;
 }
 
 .header__panel--left a {

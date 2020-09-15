@@ -41,7 +41,6 @@ a {
 
 // NAV
 nav {
-    margin-top: -8px;
     height: 100%;
     position: absolute;
     background: #FD7858;
@@ -82,7 +81,8 @@ header {
     border-bottom: solid grey 1px;
     background: #fff;
     width: 95%;
-}
+    }
+
 
 .panel {
     display: flex;
@@ -99,6 +99,23 @@ header {
 .header__panel--left {
     display: flex;
     justify-content: center;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FD7858;
+        width: 33px;
+        height: 18px;
+        border-radius: 20px;
+        li {    
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #fff;
+            margin-left: 1px;
+        }
+    }
 
     a {
         display: flex;
