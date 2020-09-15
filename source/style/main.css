@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'DeftoneStylus';
+  src: url(../fonts/DeftoneStylus.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *::after,
 *::before {
