@@ -71,7 +71,6 @@ nav .nav__menu p {
 }
 
 nav .nav__link {
-  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,13 +81,19 @@ nav .nav__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
+}
+
+nav .nav__link:hover {
+  width: 100%;
+  background-color: #c44556;
 }
 
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: solid grey 1px;
+  border-bottom: solid #F1F1F1 1px;
   background: #fff;
   width: 95%;
 }
@@ -103,14 +108,11 @@ header {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .item {
   padding: 0 20px;
-  border-right: solid grey 1px;
+  border-right: solid #F1F1F1 1px;
 }
 
 .header__panel--left {
@@ -188,7 +190,7 @@ header {
 }
 
 .header__upload {
-  border-left: solid grey 1px;
+  border-left: solid #F1F1F1 1px;
 }
 
 .header__planet-earth {
@@ -576,6 +578,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #FD7858;
+}
+
+.aside__menu li {
+  padding: 10px;
+}
+
+.aside__menu li:hover {
+  background-color: #c44556;
 }
 
 .users {
