@@ -43,7 +43,7 @@ a {
 nav {
     height: 100%;
     position: absolute;
-    background: #FD7858;
+    background: white;
     left: 0;
     width: 5%;
 
@@ -52,17 +52,23 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'DeftoneStylus';
         background-color: #FFFFFF;
-        color: #FD7858;
-        font-size: 30px;
         padding: 20px;
         border-right: solid #F1F1F1 1px;
+        font-family: 'DeftoneStylus';
+        background: linear-gradient(90deg, #fd4e75, #fc7858);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 30px;
+
     }
     .nav__menu {
-            p {
-                font-size: 10px;
-                color: #FFFFFF;
+        background: #FD7858;
+        height: 100%;
+
+        p {
+            font-size: 10px;
+            color: #FFFFFF;
         }
     }
 
