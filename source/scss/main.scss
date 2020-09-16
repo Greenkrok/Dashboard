@@ -81,7 +81,8 @@ nav {
 
     .nav__link:hover {
         width: 100%;
-        background-color: #c44556
+        background-color: #c44556;
+        cursor: pointer;
     }
     }
 
@@ -203,6 +204,7 @@ header {
 .statics {
     width: 95%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background: #fff;
@@ -497,7 +499,6 @@ header {
     &__menu {
         display: flex;
         justify-content: space-around;
-        align-items: center;
         background-color: #FD7858;
 
         li {
@@ -505,7 +506,8 @@ header {
         }
 
         li:hover {
-            background-color: #c44556
+            background-color: #c44556;
+            cursor: pointer;
         }
     }
 }

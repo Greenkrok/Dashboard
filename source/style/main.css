@@ -96,6 +96,7 @@ nav .nav__link {
 nav .nav__link:hover {
   width: 100%;
   background-color: #c44556;
+  cursor: pointer;
 }
 
 header {
@@ -254,6 +255,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -585,9 +588,6 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #FD7858;
 }
 
@@ -597,6 +597,7 @@ header {
 
 .aside__menu li:hover {
   background-color: #c44556;
+  cursor: pointer;
 }
 
 .users {
