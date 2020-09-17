@@ -230,6 +230,9 @@ header {
 }
 
 .operator__avatar {
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/header/operator/Kendall-Jenner.png);
   margin-left: 10px;
 }
 
@@ -616,10 +619,32 @@ header {
   cursor: pointer;
 }
 
-.users {
+.aside__users {
   background-color: white;
   height: 33vw;
   overflow: hidden auto;
+}
+
+.aside__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10px;
+}
+
+.aside__avatar img {
+  width: 43px;
+  height: 43px;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .searchPeoples {
