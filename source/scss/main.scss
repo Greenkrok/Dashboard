@@ -60,6 +60,8 @@ nav {
         -webkit-background-clip: text;
         color: transparent;
         font-size: 30px;
+        font-weight: bold;
+        box-shadow: 0 0 20px #888;
 
     }
     .nav__menu {
@@ -493,6 +495,11 @@ header {
 
 
 // ASIDE-FOOTER
+.aside-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 // ASIDE
 .aside {
@@ -514,7 +521,7 @@ header {
 
 .users {
     background-color: white;
-    height: 26vw;
+    height: 33vw;
     overflow: hidden auto;
 }
 .searchPeoples {
@@ -540,6 +547,9 @@ footer {
  .social {
      display: flex;
      flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     padding: 10px 0;
      li {
          padding: 10px;
          margin: 5px;
