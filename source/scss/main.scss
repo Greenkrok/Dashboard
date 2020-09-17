@@ -224,12 +224,12 @@ header {
     }
 
     &__progress::before {
-        content: url(../img/progress.png);
+        content: url(../img/main/progress.png);
         margin-right: 5px;        
     }
 
     &__regression::before {
-        content: url(../img/regression.png);
+        content: url(../img/main/regression.png);
         margin: 0 5px;              
     }
 
