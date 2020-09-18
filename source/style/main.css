@@ -43,63 +43,63 @@ a {
 nav {
   height: 100%;
   position: absolute;
-  background: white;
   left: 0;
-  width: 5%;
+  background-color: #fc6863;
 }
 
-nav .logo {
+.nav__link {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 70px;
+  min-height: 70px;
+  padding-bottom: 10px;
+  font-size: 11px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__link--logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFFFFF;
-  padding: 20px;
-  border-right: solid #F1F1F1 1px;
   font-family: 'DeftoneStylus';
-  background: -webkit-gradient(linear, left top, right top, from(#fd4e75), to(#fc7858));
-  background: linear-gradient(90deg, #fd4e75, #fc7858);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 30px;
-  font-weight: bold;
-  -webkit-box-shadow: 0 0 20px #888;
-          box-shadow: 0 0 20px #888;
+  font-size: 40px;
+  color: #fc6863;
+  background-color: #fff;
+  -webkit-box-shadow: 5px -1px 5px #888;
+          box-shadow: 5px -1px 5px #888;
 }
 
-nav .nav__menu {
-  background: #FD7858;
-  height: 100%;
+.nav__link--home {
+  background: url(../img/nav/home.png) no-repeat center 20px;
 }
 
-nav .nav__menu p {
-  font-size: 10px;
-  color: #FFFFFF;
+.nav__link--statistics {
+  background: url(../img/nav/statics.png) no-repeat center 20px;
 }
 
-nav .nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
+.nav__link--users {
+  background: url(../img/nav/user.png) no-repeat center 20px;
 }
 
-nav .nav__link:hover {
-  width: 100%;
-  background-color: #c44556;
-  cursor: pointer;
+.nav__link--settings {
+  background: url(../img/nav/settings.png) no-repeat center 20px;
+}
+
+.nav__link--information {
+  background: url(../img/nav/quires.png) no-repeat center 20px;
+}
+
+.nav__link--power {
+  background: url(../img/nav/power.png) no-repeat center 20px;
 }
 
 header {
@@ -358,6 +358,14 @@ header {
   padding: 5px 20px;
 }
 
+.chart__mainContent {
+  width: 35vw;
+}
+
+.chart__mainContent img {
+  width: 100%;
+}
+
 .chart__revenue {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,6 +509,15 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.customersFeed .customer img {
+  width: 43px;
+  height: 43px;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .logistics {

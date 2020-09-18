@@ -43,49 +43,54 @@ a {
 nav {
     height: 100%;
     position: absolute;
-    background: white;
     left: 0;
-    width: 5%;
-
-
-    .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #FFFFFF;
-        padding: 20px;
-        border-right: solid #F1F1F1 1px;
-        font-family: 'DeftoneStylus';
-        background: linear-gradient(90deg, #fd4e75, #fc7858);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-size: 30px;
-        font-weight: bold;
-        box-shadow: 0 0 20px #888;
-
-    }
-    .nav__menu {
-        background: #FD7858;
-        height: 100%;
-
-        p {
-            font-size: 10px;
-            color: #FFFFFF;
-        }
+    background-color: #fc6863
     }
 
     .nav__link {
+        position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px ;
-    }
+        justify-content: center;
+        align-items: flex-end;
+        width: 70px;
+        min-height: 70px;
+        padding-bottom: 10px;
+        font-size: 11px;
+        color: #fff;
+        text-decoration: none;
 
-    .nav__link:hover {
-        width: 100%;
-        background-color: #c44556;
-        cursor: pointer;
-    }
+        &--logo {
+            align-items: center;
+            font-family: 'DeftoneStylus';
+            font-size: 40px;
+            color: #fc6863;
+            background-color: #fff;
+            box-shadow: 5px -1px 5px #888;
+        }
+
+        &--home {
+            background: url(../img/nav/home.png) no-repeat center 20px;
+        }
+
+        &--statistics {
+            background: url(../img/nav/statics.png) no-repeat center 20px;
+        }
+
+        &--users {
+            background: url(../img/nav/user.png) no-repeat center 20px;
+        }
+
+        &--settings {
+            background: url(../img/nav/settings.png) no-repeat center 20px;
+        }
+
+        &--information {
+            background: url(../img/nav/quires.png) no-repeat center 20px;
+        }
+
+        &--power {
+            background: url(../img/nav/power.png) no-repeat center 20px;
+        }
     }
 
 
@@ -296,6 +301,14 @@ header {
         }
     }
 
+    &__mainContent {
+        width: 35vw;
+
+        img {
+            width: 100%;
+        }
+    }
+
     &__revenue {
         display: flex;
         flex-direction: column;
@@ -405,10 +418,16 @@ header {
         }
     }
 
-    .customer {
-        
-    display: flex;
-    justify-content: space-around;
+    .customer {  
+        display: flex;
+        justify-content: space-around;
+
+        img { 
+            width: 43px;
+            height: 43px;
+            object-position: top;
+            object-fit: cover;
+        }
     }
 }
 
