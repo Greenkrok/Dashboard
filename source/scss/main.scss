@@ -97,11 +97,23 @@ nav {
         }
 
         &:not(:first-child):hover {
-        background-color: #c44457;
+            background-color: #c44457;
         }
 
+        &:not(:first-child):hover::after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 70px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 8px solid #c44457;
+            }
+
         &--logo:hover {
-        background-color: wheat;
+            background-color: wheat;
         }
 
     }
@@ -546,6 +558,7 @@ header {
     }
 
     &__link {
+        position: relative;
         width: 86px;
         min-height: 48px;
 
@@ -562,6 +575,18 @@ header {
     &__link:hover {
         background-color: #c44457;
     }
+    
+    &__link:hover::after {
+        content: "";
+        position: absolute;
+        top: 48px;
+        left: 43px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid  #c44457;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        }
 
     &__users {
         background-color: white;
