@@ -1,2 +1,2 @@
 # Dashboard
-https://greenkrok.github.io/Dashboard/
+https://greenkrok.github.io/Final-Dashboard/
