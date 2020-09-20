@@ -565,7 +565,6 @@ header {
 .aside-footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 // ASIDE
@@ -608,8 +607,8 @@ header {
 
     &__users {
         background-color: white;
-        height: 33vw;
-        overflow: hidden auto;
+        height: 26vw;
+        overflow-y: scroll;
     }
 
     &__user {
@@ -629,9 +628,9 @@ header {
 
 .searchPeoples {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px 0px;
+    margin: 10px;
     input {
         font-size: 10px;
         background-color: inherit;
@@ -642,7 +641,9 @@ header {
 
 // FOOTER
 footer {
+    height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     background: #fff;
@@ -652,7 +653,7 @@ footer {
      flex-wrap: wrap;
      justify-content: center;
      align-items: center;
-     padding: 10px 0;
+     padding: 25px 0;
      li {
          padding: 10px;
          margin: 5px;
