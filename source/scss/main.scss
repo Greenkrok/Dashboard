@@ -48,7 +48,7 @@ nav {
     height: 100%;
     position: absolute;
     left: 0;
-    background-color: #fc755a
+    background: linear-gradient(120deg, #fc7858, #fd4e75);
     }
 
     .nav__link {
@@ -148,7 +148,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #FD7858;
+        background: linear-gradient(90deg, #fd4e75, #fc7858);
         width: 33px;
         height: 18px;
         border-radius: 20px;
@@ -554,7 +554,7 @@ header {
 .aside {
     &__menu {
         display: flex;
-        background-color: #FD7858;
+        background: linear-gradient(90deg, #fd4e75, #fc7858);
     }
 
     &__link {
@@ -646,21 +646,21 @@ footer {
          border-radius: 25%;
      }
      .rdio {
-         background-color: #8662c5;
+        background: linear-gradient(120deg, #b26ae1, #6359b0);
      }
      .css-3 {
-         background-color: #4eccc4;
+        background: linear-gradient(120deg, #52e7c5, #4bb9c3);
      }
      .deviantart {
-         background-color: #e5a58f;
+        background: linear-gradient(120deg, #f6b797, #ad6a77);
      }
      .xing {
-         background-color: #7e7fd9;
+        background: linear-gradient(120deg, #708ae6, #8841af);
      }
      .vimeo {
-         background-color: #30c3df;
+        background: linear-gradient(120deg,  #29cddd,#5885e8);
      }
      .vk {
-         background-color: #f9c787;
+         background: linear-gradient(120deg, #fbda89, #f48982);
      }
  }
