@@ -499,14 +499,10 @@ header {
 }
 
 .customersFeed {
-  width: 50%;
   background-color: #ffffff;
   margin: 20px;
   padding: 20px;
-}
-
-.customersFeed__feeds {
-  margin-left: 20px;
+  overflow-y: scroll;
 }
 
 .customersFeed__title {
@@ -515,8 +511,33 @@ header {
   margin-bottom: 20px;
 }
 
+.customersFeed__customers {
+  height: 0;
+}
+
+.customersFeed .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.customersFeed .customer img {
+  width: 43px;
+  height: 43px;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .customersFeed__status {
   font-size: 8px;
+}
+
+.customersFeed__feeds {
+  margin-left: 20px;
 }
 
 .customersFeed__container {
@@ -539,23 +560,6 @@ header {
   font-weight: bold;
 }
 
-.customersFeed .customer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.customersFeed .customer img {
-  width: 43px;
-  height: 43px;
-  -o-object-position: top;
-     object-position: top;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .logistics {
   width: 50%;
 }
@@ -567,9 +571,11 @@ header {
 }
 
 .todaysTask {
+  height: 12vw;
   background-color: #ffffff;
   margin: 20px;
   padding: 20px;
+  overflow-y: scroll;
 }
 
 .todolist__item {
