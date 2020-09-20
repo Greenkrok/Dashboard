@@ -49,7 +49,7 @@ nav {
   height: 100%;
   position: absolute;
   left: 0;
-  background-color: #fc6863;
+  background-color: #fc755a;
 }
 
 .nav__link {
@@ -105,6 +105,14 @@ nav {
 
 .nav__link--power {
   background: url(../img/nav/power.png) no-repeat center 20px;
+}
+
+.nav__link:not(:first-child):hover {
+  background-color: #c44457;
+}
+
+.nav__link--logo:hover {
+  background-color: wheat;
 }
 
 header {
@@ -628,18 +636,28 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   background-color: #FD7858;
 }
 
-.aside__menu li {
-  padding: 10px;
+.aside__link {
+  width: 91px;
+  min-height: 48px;
 }
 
-.aside__menu li:hover {
-  background-color: #c44556;
-  cursor: pointer;
+.aside__link--users {
+  background: url(../img/aside/users.png) no-repeat center;
+}
+
+.aside__link--chat {
+  background: url(../img/aside/chat.png) no-repeat center;
+}
+
+.aside__link--like {
+  background: url(../img/aside/like.png) no-repeat center;
+}
+
+.aside__link:hover {
+  background-color: #c44457;
 }
 
 .aside__users {

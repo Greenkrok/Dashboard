@@ -48,7 +48,7 @@ nav {
     height: 100%;
     position: absolute;
     left: 0;
-    background-color: #fc6863
+    background-color: #fc755a
     }
 
     .nav__link {
@@ -95,6 +95,15 @@ nav {
         &--power {
             background: url(../img/nav/power.png) no-repeat center 20px;
         }
+
+        &:not(:first-child):hover {
+        background-color: #c44457;
+        }
+
+        &--logo:hover {
+        background-color: wheat;
+        }
+
     }
 
 
@@ -533,17 +542,25 @@ header {
 .aside {
     &__menu {
         display: flex;
-        justify-content: space-around;
         background-color: #FD7858;
+    }
 
-        li {
-            padding: 10px;
-        }
+    &__link {
+        width: 91px;
+        min-height: 48px;
 
-        li:hover {
-            background-color: #c44556;
-            cursor: pointer;
+        &--users {
+            background: url(../img/aside/users.png) no-repeat center;
         }
+        &--chat {
+            background: url(../img/aside/chat.png) no-repeat center;
+        }
+        &--like {
+            background: url(../img/aside/like.png) no-repeat center;
+        }
+    }
+    &__link:hover {
+        background-color: #c44457;
     }
 
     &__users {
