@@ -268,23 +268,18 @@ header {
 }
 
 .operator__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
+  margin: 0 20px;
 }
 
 .operator__name {
   color: #FD7858;
   font-size: 13px;
+  font-weight: bold;
 }
 
 .operator__profession {
   font-size: 10px;
+  color: #BFBFBF;
 }
 
 .statics {
@@ -302,7 +297,7 @@ header {
   padding: 20px 0px;
 }
 
-.statics__item {
+.statics__item p {
   font-weight: bold;
 }
 
@@ -382,7 +377,7 @@ header {
 .chart__menu li a:hover {
   color: white;
   background-color: red;
-  border-radius: 40%;
+  border-radius: 25%;
   padding: 5px 20px;
 }
 
@@ -484,7 +479,7 @@ header {
   background-color: #ffffff;
 }
 
-.block__content {
+.block__content p {
   color: #6a5bb4;
   font-size: 25px;
   font-weight: bold;
@@ -507,7 +502,7 @@ header {
   overflow-y: scroll;
 }
 
-.customersFeed__title {
+.customersFeed__title p {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -534,7 +529,7 @@ header {
      object-fit: cover;
 }
 
-.customersFeed__status {
+.customersFeed__status p {
   font-size: 8px;
 }
 
@@ -562,14 +557,9 @@ header {
   font-weight: bold;
 }
 
-.logistics {
-  width: 50%;
-}
-
-.logistics__title {
+.logistics__title p {
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .todaysTask {
@@ -643,7 +633,7 @@ header {
       justify-content: space-around;
 }
 
-.view .block__item .block__content {
+.view .block__item .block__content p {
   color: #FD7858;
 }
 
@@ -716,6 +706,16 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 10px;
+}
+
+.aside__name {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.aside__profession {
+  font-size: 10px;
+  color: #BFBFBF;
 }
 
 .aside__avatar img {

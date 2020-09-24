@@ -216,18 +216,18 @@ header {
     }
 
     &__info {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
+        margin: 0 20px;
     }
 
     &__name {
         color: #FD7858;
         font-size: 13px;
+        font-weight: bold;
     }
 
     &__profession {
         font-size: 10px;
+        color: #BFBFBF;
     }
 }
 
@@ -240,7 +240,7 @@ header {
     background: #fff;
     padding: 20px 0px;
 
-    &__item {
+    &__item p {
         font-weight: bold;
     }
 
@@ -308,7 +308,7 @@ header {
             a:hover {
                 color: white;
                 background-color: red;
-                border-radius: 40%;
+                border-radius: 25%;
                 padding: 5px 20px;
             }
         }
@@ -381,7 +381,7 @@ header {
         background-color: #ffffff;
     }
 
-    &__content {
+    &__content p {
         color: #6a5bb4;
         font-size: 25px;
         font-weight: bold;
@@ -402,7 +402,7 @@ header {
     padding: 20px;
     overflow-y: scroll;
   
-    &__title {
+    &__title p {
         font-size: 14px;
         font-weight: bold;
         margin-bottom: 20px;
@@ -424,7 +424,7 @@ header {
         }
     }
       
-    &__status {
+    &__status p {
         font-size: 8px;
     }
 
@@ -455,12 +455,10 @@ header {
 
 // LOGISTICS
 .logistics {
-    width: 50%;
 
-    &__title {
+    &__title p {
         font-size: 14px;
         font-weight: bold;
-        margin-bottom: 20px;
     }
 }
 
@@ -520,7 +518,7 @@ header {
         width: 100%;
         justify-content: space-around;
 
-        .block__content {
+        .block__content p {
             color: #FD7858;
         }
     }
@@ -582,6 +580,16 @@ header {
         align-items: center;
         justify-content: space-between;
         margin: 0 10px;
+    }
+
+    &__name {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    &__profession {
+        font-size: 10px;
+        color: #BFBFBF;
     }
 
     &__avatar img {
