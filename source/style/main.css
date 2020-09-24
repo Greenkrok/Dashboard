@@ -580,11 +580,6 @@ header {
   overflow-y: scroll;
 }
 
-.todolist__item {
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-}
-
 .todolist img {
   margin: 0 10px;
 }
@@ -599,6 +594,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
 }
 
 .todolist__item .time {

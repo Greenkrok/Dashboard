@@ -474,11 +474,6 @@ header {
 }
 
 .todolist {
-    &__item {
-        border-top: 1px solid #ededed;
-        border-bottom: 1px solid #ededed;
-    }
-
     img {
         margin: 0 10px;
     }
@@ -487,6 +482,8 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
         
         .time {
             display: flex;
