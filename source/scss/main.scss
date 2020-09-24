@@ -41,6 +41,8 @@ a {
 nav {
     position: fixed;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(120deg, #fc7858, #fd4e75);
 
     .nav__link {
@@ -86,6 +88,7 @@ nav {
 
         &--power {
             background: url(../img/nav/power.png) no-repeat center 20px;
+            margin-top: auto;
         }
 
         &:not(:first-child):hover {
