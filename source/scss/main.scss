@@ -39,6 +39,8 @@ a {
 
 // NAV
 nav {
+    position: fixed;
+    height: 100%;
     background: linear-gradient(120deg, #fc7858, #fd4e75);
 
     .nav__link {
@@ -109,7 +111,10 @@ nav {
 }
 
 // WRAPPER   
+.wrapper {
+    margin-left: 70px;
 
+}
 // HEADER
 header {
     display: flex;

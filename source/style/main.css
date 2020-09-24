@@ -40,6 +40,8 @@ a {
 }
 
 nav {
+  position: fixed;
+  height: 100%;
   background: linear-gradient(120deg, #fc7858, #fd4e75);
 }
 
@@ -116,6 +118,10 @@ nav .nav__link:not(:first-child):hover::after {
 
 nav .nav__link--logo:hover {
   background-color: wheat;
+}
+
+.wrapper {
+  margin-left: 70px;
 }
 
 header {
