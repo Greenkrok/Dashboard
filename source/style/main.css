@@ -20,21 +20,6 @@ body {
   color: #777777;
 }
 
-.wrap {
-  max-width: 1366px;
-  margin: 0 auto;
-  background-color: #EAEAEA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -45,14 +30,20 @@ a {
   text-decoration: none;
 }
 
+.wrap {
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 nav {
-  height: 100%;
-  position: absolute;
-  left: 0;
   background: linear-gradient(120deg, #fc7858, #fd4e75);
 }
 
-.nav__link {
+nav .nav__link {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +62,7 @@ nav {
   text-decoration: none;
 }
 
-.nav__link--logo {
+nav .nav__link--logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -83,35 +74,35 @@ nav {
           box-shadow: 5px -1px 5px #888;
 }
 
-.nav__link--home {
+nav .nav__link--home {
   background: url(../img/nav/home.png) no-repeat center 20px;
 }
 
-.nav__link--statistics {
+nav .nav__link--statistics {
   background: url(../img/nav/statics.png) no-repeat center 20px;
 }
 
-.nav__link--users {
+nav .nav__link--users {
   background: url(../img/nav/user.png) no-repeat center 20px;
 }
 
-.nav__link--settings {
+nav .nav__link--settings {
   background: url(../img/nav/settings.png) no-repeat center 20px;
 }
 
-.nav__link--information {
+nav .nav__link--information {
   background: url(../img/nav/quires.png) no-repeat center 20px;
 }
 
-.nav__link--power {
+nav .nav__link--power {
   background: url(../img/nav/power.png) no-repeat center 20px;
 }
 
-.nav__link:not(:first-child):hover {
+nav .nav__link:not(:first-child):hover {
   background-color: #c44457;
 }
 
-.nav__link:not(:first-child):hover::after {
+nav .nav__link:not(:first-child):hover::after {
   content: "";
   position: absolute;
   top: 30px;
@@ -123,7 +114,7 @@ nav {
   border-left: 8px solid #c44457;
 }
 
-.nav__link--logo:hover {
+nav .nav__link--logo:hover {
   background-color: wheat;
 }
 
@@ -133,7 +124,6 @@ header {
   display: flex;
   border-bottom: solid #F1F1F1 1px;
   background: #fff;
-  width: 95%;
 }
 
 .panel {
@@ -284,7 +274,6 @@ header {
 }
 
 .statics {
-  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +321,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
 }
 
 .revenue {
